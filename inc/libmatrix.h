@@ -4,7 +4,7 @@
 
 typedef struct  s_matrix
 {
-    float       **data;
+    double       **data;
     int         rows;
     int         columns;
 }               t_matrix;

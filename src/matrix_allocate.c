@@ -7,11 +7,11 @@ t_matrix        matrix_allocate(int rows, int columns)
     int         i;
     int         j;
 
-    matrix.data = (float **)malloc(rows * sizeof(float*));
+    matrix.data = (double **)malloc(rows * sizeof(double *));
     i = 0;
     while (i < rows)
     {
-        matrix.data[i] = (float *)malloc(columns * sizeof(float));
+        matrix.data[i] = (double *)malloc(columns * sizeof(double));
         j = 0;
         while (j < columns)
         {
